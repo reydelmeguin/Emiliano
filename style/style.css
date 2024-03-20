@@ -1,0 +1,13 @@
+body{
+    background-color: darkgrey;
+}
+
+h1{
+    text-shadow: 2px 2px 4px #000000; 
+  -webkit-text-stroke: 1px #ffffff;
+}
+
+h2{
+    text-shadow: 2px 2px 4px #f5d000; 
+    -webkit-text-stroke: 1px #ff0000;   
+}
