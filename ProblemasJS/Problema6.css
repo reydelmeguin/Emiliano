@@ -1,0 +1,173 @@
+:root {
+    --colorTextos: #49454567;
+}
+
+*,
+::before,
+::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-image: url('./ImagenFondo.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 650px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.main {
+    min-height: 100vh;
+    padding: 60px 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+h1 {
+    text-align: center;
+    font-weight: 700;
+}
+
+.contenido .grupo{
+    margin-bottom: 25px;
+}
+
+.form {
+    background: white;
+    padding: 60px;
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.1);
+    border-radius: 15px;
+    width: 80%;
+    margin: auto;
+}
+
+.form .grupo {
+    position: relative;
+    margin: 45px;
+}
+
+input {
+    background: none;
+    color: #333;
+    font-size: 18px;
+    padding: 15px;
+    display: block;
+    width: 100%;
+    border: none;
+    border-bottom: 1px solid var(--colorTextos);
+}
+
+input:focus {
+    outline: none;
+    color: #555;
+}
+
+label {
+    color: var(--colorTextos);
+    font-size: 16px;
+    position: absolute;
+    bottom: 0;
+    left: 5px;
+    top: 15px;
+    transition: 0.5s ease all;
+    pointer-events: none;
+}
+
+input:focus~label,
+input:valid~label {
+    top: -20px;
+    font-size: 14px;
+    color: #2196f3;
+}
+
+.contenido h4 {
+    font-size: 20px;
+    text-align: center;
+    line-height: 1.2;
+    color: #65C7F7;
+    font-weight: 500;
+}
+
+.barra {
+    position: relative;
+    display: block;
+    width: 100%;
+}
+
+.barra::before {
+    content: "";
+    height: 2px;
+    width: 0%;
+    bottom: 0;
+    position: absolute;
+    background: linear-gradient(to right, #0052D4, #65C7F7, #9CECFB);
+    transition: 0.3s ease width;
+    left: 0;
+}
+
+input:focus~.barra::before { 
+    width: 100%;
+}
+
+button {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: #006600;
+    border: none;
+    display: block;
+    padding: 25px;
+    width: 100%;
+    margin: 30px auto;
+    color: white;
+    height: 60px;
+    font-size: 24px;
+    cursor: pointer;
+    border-radius: 15px;
+}
+
+button:hover {
+    background: #228B22;
+}
+
+::placeholder {
+    color: #555;
+}
+
+.btn-1 {
+    display: block;
+    padding: 20px;
+    background: #006600;
+    color: #fff;
+    align-items: center;
+    text-decoration: none;
+    border-radius: 30px;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    width: 90%;
+}
+
+.btn-1:hover {
+    background: #228B22;
+}
+
+input[type="date"] {
+    background: none;
+    color: #333;
+    font-size: 18px;
+    padding: 15px;
+    display: block;
+    width: 100%;
+    border: none;
+    border-bottom: 1px solid var(--colorTextos);
+}
+
+input[type="date"]:focus {
+    outline: none;
+    color: #555;
+}

@@ -1,0 +1,165 @@
+:root {
+    --colorTextos: #006600; /* Cambiado a un tono de verde */
+}
+
+
+*,
+::before,
+::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Cambiado el tipo de letra */
+    
+    background-image: url('./ImagenFondo.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    height: 650px;
+    display: flex;
+    justify-content: center;
+    align-items:baseline-position;
+}
+
+.main {
+    min-height: 100vh;
+    padding: 60px 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+h1 {
+    text-align: center;
+    font-weight: 700;
+}
+
+.contenido .grupo{
+    margin-bottom: 25px;
+}
+
+
+.form {
+    background: #f0f8ff; /* Cambiado a un tono de verde claro */
+    padding: 60px; /* Aumentado el padding */
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.1);
+    border-radius: 15px; /* Aumentado el radio de borde */
+}
+
+.form {
+    width: 80%; /* Reducido el ancho */
+    margin: auto;
+}
+
+.form .grupo {
+    position: relative;
+    margin: 25px; /* Reducido el margen */
+}
+
+input {
+    background: none;
+    color: #333; /* Cambiado a un tono más oscuro */
+    font-size: 18px;
+    padding: 15px; /* Aumentado el padding */
+    display: block;
+    width: 100%;
+    border: none;
+    border-bottom: 1px solid var(--colorTextos);
+}
+
+input:focus {
+    outline: none;
+    color: #555; /* Cambiado a un tono más oscuro */
+}
+
+label {
+    color: var(--colorTextos);
+    font-size: 16px;
+    position: absolute;
+    bottom: 0;
+    left: 5px;
+    top: 15px; /* Aumentado el espacio superior */
+    transition: 0.5s ease all;
+    pointer-events: none;
+}
+
+input:focus~label,
+input:valid~label {
+    top: -20px; /* Aumentado el espacio superior */
+    font-size: 14px; /* Reducido el tamaño de la fuente */
+    color: #228B22; /* Cambiado a un tono de verde más oscuro */
+}
+
+.contenido h4 {
+    font-size: 20px;
+    text-align: center;
+    line-height: 1.2;
+    color: #006600; /* Cambiado a un tono de verde */
+    font-weight: 500;
+}
+
+.barra {
+    position: relative;
+    display: block;
+    width: 100%;
+}
+
+.barra::before {
+    content: "";
+    height: 2px;
+    width: 0%;
+    bottom: 0;
+    position: absolute;
+    background: #006600; /* Cambiado a un tono de verde */
+    transition: 0.3s ease width;
+    left: 0;
+}
+
+input:focus~.barra::before { 
+    width: 100%;
+}
+
+button {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Cambiado el tipo de letra */
+    background: #006600; /* Cambiado a un tono de verde */
+    border: none;
+    display: block;
+    padding: 25px; /* Aumentado el padding */
+    width: 100%; /* Ajustado el ancho al 100% */
+    margin: 30px auto; /* Aumentado el margen */
+    color: white;
+    height: 60px; /* Aumentado la altura */
+    font-size: 24px; /* Aumentado el tamaño de la fuente */
+    cursor: pointer;
+    border-radius: 15px;
+}
+
+button:hover {
+    background: #228B22; /* Cambiado a un tono de verde más oscuro */
+}
+
+::placeholder {
+    color: #555; /* Cambiado a un tono más oscuro */
+}
+
+
+.btn-1 {
+    display: block;
+    padding: 20px; /* Ajustado el padding */
+    background: #006600; /* Cambiado a un tono de verde */
+    color: #fff; /* Cambiado a blanco */
+    align-items: center;
+    text-decoration: none;
+    border-radius: 30px; /* Aumentado el radio de borde */
+    position: absolute; /* Cambiado a posición absoluta */
+    top: 20px; /* Cambiado la posición vertical */
+    right: 20px; /* Cambiado la posición horizontal */
+    width: 90%; /* Aumentado el ancho al 90% */
+}
+
+.btn-1:hover {
+    background: #228B22; /* Cambiado a un tono de verde más oscuro */
+}
