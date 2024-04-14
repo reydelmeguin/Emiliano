@@ -10,7 +10,7 @@
     <style>
         .color1{
             background-color: #006eff;
-            border-radius: 15px;
+            
         }
 
     </style>
@@ -29,8 +29,8 @@
             <br>
         <table class="tableselect">
             <tr>
-                <td class="color1"><h1 class="selecttitle" style="color: #45566d;"><a href="algoritmia2.html">PROBLEMA 2</a></h1></td>
-                <td class="color1"><h1 class="selecttitle" style="color: #45566d;"><a href="algoritmia3.html">PROBLEMA 3</a></h1></td>
+                <td class="color1"><h1 class="selecttitle" style="color: #FEFBD2;"><a href="algoritmia2.html">PROBLEMA 2</a></h1></td>
+                <td class="color1"><h1 class="selecttitle" style="color: #FEFBD2;"><a href="algoritmia3.html">PROBLEMA 3</a></h1></td>
               </tr>
         </table>
 
@@ -38,10 +38,10 @@
         <div class="problema-container" >
             <table class="tablebody">
                 <tr><td>
-                    <h2>Dada una lista de palabras separadas por un espacio, invierte el orden de dichas palabras. Las palabras deben ser separadas unicamente por espacios.</h2>
+                    <h2>Dada una seriede palabras separadas por un espacio, invierte el orden de dichas palabras. Las palabras pueden estar separadas unicamente por espacios NO USES COMAS Y USA MAYUSCULAS.</h2>
             <div class="problema-content" >
-                <input type="text" class="problema-input" placeholder="palabras separadas por un espacio: " id="p1-input"><br>
-                <button type="button" class="problema-button" style="margin-top: 1rem;" onclick="problema1()" ><b>Invertir palabras</b></button>
+                <input type="text" class="problema-input" placeholder="Ingresa las palabras separadas por un espacio: " id="p1-input" onkeydown="return validarLetras(event)"><br>
+                <button type="button" class="problema-button" style="margin-top: 1rem;" onclick="problema1()"><b>Invertir palabras</b></button>
                 <pre class="problema-output" id="p1-output" ><p>Esperando datos...</p></pre>
             </div>
                 </td></tr>

@@ -1,5 +1,37 @@
+function validarNumeros(event) {
+    let numero = event.keyCode;
+    if((numero > 47 && numero < 58 ) || (numero === 8) || (numero > 95 && numero < 106)){
+      return true;
+    } else{
+        alert("Ingresa Unicamente Numeros.")
+      return false;
+}}
 
+function validarLetras(event) {
+    let letra = event.keyCode;
+    if( (letra > 64 && letra < 91 || letra === 192) || (letra === 8) || (letra === 32) || (letra === 20)){
+        return true;
+    }else{
+        alert("Ingresa solo letras deben estar separadas por espacios.");
+        return false;
+        }
+    
+}
 
+function validarLetras3(event) {
+    let letra = event.keyCode;
+    if( (letra > 64 && letra < 91 || letra === 192) || (letra === 8) || (letra === 188) || (letra === 20)){
+        return true;
+    }else{
+        alert("Ingresa solo letras en Mayusculas que esten solamente separadas por comas.");
+        return false;
+        }
+    
+}
+
+function mayusculas(e){
+    e.value = e.value.toUpperCase();
+}
 
 function problema1(){
 
@@ -7,18 +39,11 @@ function problema1(){
 
 
 
-    //tenemos que detectar el espacio, tendria que dividir la cadena y colocarla
-    //dentro de un array
-
     var p1_array = p1_input.split(' ').reverse();
 
+  
 
-
-      //dentro de un array
-      //dentrodeunarray
-      //alreves
-      //separar
-
+    
     var p1_res = '';
 
 
@@ -44,11 +69,9 @@ function problema2(){
     var p2_y4 = document.querySelector('#p2-y4').value;
     var p2_y5 = document.querySelector('#p2-y5').value;
 
-    //vamos a formar los vectores
     var v1 = [p2_x1, p2_x2, p2_x3, p2_x4, p2_x5];
     var v2 = [p2_y1, p2_y2, p2_y3, p2_y4, p2_y5];
 
-    //vamos a meter una funcion de ordenamiento
     v1 = v1.sort(function(a,b){
         return b-a;
     });
@@ -56,54 +79,52 @@ function problema2(){
         return b-a;
     });
 
-    //invierto la cadena
+    
     v2 = v2.reverse();
 
-    //vamos a recorrer el v1 y lo vamos a multiplicar el inverso del v2
+    
     var p2_producto = 0;
     for(var i = 0; i < v1.length; i++){
         p2_producto += v1[i] * v2[i];
     }
-    //muestro el resultado
+  
     document.querySelector('#p2-output').textContent = 'El producto escalar minimo es de: ' + p2_producto;
 }
 
 function problema3(){
-    //definir un albeto
+ 
     var alfabeto = ['A', 'B', 'C', 'D', 'E', 'F',
             'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N',
             'Ñ', 'O', 'P', 'Q', 'R', 'S', 'T', 'U',
             'V', 'W', 'X', 'Y', 'Z'];
 
-    //Obtener la cadena del input y separar por comas
+   
     
     var p3_input = document.querySelector('#p3-input').value;
 
     var p3_palabras = p3_input.split(',');
 
-    //eliminar el espacio que hay entre cada palabra
+    
     p3_palabras = p3_palabras.map(function (palabra){
         return palabra.replace(/\s/g, '').toUpperCase();
     });
 
-    //calcular los caracteres unicos de cada palabra
-
     var p3_res = '';
 
-    //iterar en cada palabra
+  
 
     p3_palabras.forEach(function (palabra, i){
-        //separar las palabras en un array para leer cada letra
+       
         var letras_unicas = [];
         var palabra_array = palabra.split('');
-        //iterar al alfabeto
+       
         alfabeto.forEach(function (letra, j){
-            //iterar por palabra
+            
             palabra_array.forEach(function (letra_palabra, k){
-                //comprobar que la letra esta dentro del alfabeto
+              
                 if(letra_palabra == letra){
-                    //si la letra no la hemos contado, la agregamos a un array
-                    //para contar las letras unicas
+                    
+                   
                     if(letras_unicas.indexOf(letra) < 0){
                         letras_unicas.push(letra);
                     }

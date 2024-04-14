@@ -1,7 +1,7 @@
 body{
     background-color: #277c96;
     background-image: url(Diseño\ sin\ título.png);
-    border-radius: 15px;
+    
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     align-content: center;
     align-items: center;
@@ -11,7 +11,7 @@ body{
     margin-left: auto;
     margin-right: auto;
     align-content: center;
-    border-radius: 15px;
+    
     background-color: #006eff;
 }
 
@@ -23,7 +23,7 @@ body{
   text-align: center;
   background-color: #132838;
   width: 600px;
-  border-radius: 15px;
+ 
   border-color: #132838;
 }
 
@@ -51,7 +51,7 @@ a{
 }
 .problema-container{
     background-color: #132838;
-    border-radius: 15px;
+    
     color: #ff2600;
     text-align: center;
     align-content: center;
@@ -59,7 +59,7 @@ a{
 
 .problema-content{
     background-color: #804000;
-    border-radius: 15px;
+    
     color: #000000;
     text-align: center;
 }
@@ -67,7 +67,7 @@ a{
 .tablebody{
     background-color: #646464;
     color: #000000;
-    border-radius: 15px;    
+     
     width: 80%;
     margin-left: auto;
     margin-right: auto;
@@ -76,7 +76,7 @@ a{
 input[type="text"], input[type="number"], input[type="email"]{
     border: none;
     background: #006eff;
-    border-radius: 10px;
+    
     color: #ff0000;
     height: 30px;
     font-size: 16px;
@@ -97,7 +97,7 @@ input[type="text"], input[type="number"], input[type="email"]{
     border: none;
     outline: none;
     height: 30px;
-    border-radius: 20px;
+    
     margin-top: 5px;
     display: inline-block;
     width: 150px;
@@ -113,7 +113,7 @@ input[type="text"], input[type="number"], input[type="email"]{
     margin-left: auto;
     margin-right: auto;
     align-content: center;
-    border-radius: 15px;
+    
     font-size: x-large;
     text-align: center;
   }
