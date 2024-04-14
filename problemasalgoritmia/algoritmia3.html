@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Algoritmia 3</title>
+    <script src="algoritmiajs.js"></script>
+    <link rel="stylesheet" href="algoritmiacss.css">
+
+    <style>
+        .color1{
+            background-color: #006eff;
+            border-radius: 15px;
+        }
+
+    </style>
+
+</head>
+<body>
+    <div class="container" >
+        <br>
+        <table class="tabletitle">
+            <tr>
+                <td></td>
+                <td><h1 class="problema-title" >PROBLEMA 3</h1></td>
+                <td></td>
+            </tr>
+        </table>
+        <br>
+        <table class="tableselect">
+            <tr>
+                <td class="color1"><h1 class="selecttitle" style="color: #45566d;"><a href="algoritmia1.html">PROBLEMA 1</a></h1></td>
+                <td class="color1"><h1 class="selecttitle" style="color: #45566d;"><a href="algoritmia2.html">PROBLEMA 2</a></h1></td>
+              </tr>
+        </table>
+        <br>
+
+        <div class="problema-container">
+            <table class="tablebody"><tr><td>
+                    
+            <h2>Dada una lista de palabras, encontrar la palabra que mas numero de caracteres unicos tenga.
+                <br>
+                Ejemplo: CASA = 3 (c,a,s) PERRO = 4 (p,e,r,o)
+                <br>
+                Considera solamente el alfebeto de A-Z, en mayusculas. Las palabras ingresadas deberan estar sepradas por una coma, no se aceptan espacios.
+                </h2>
+                <div class="problema-content" >
+                    <input type="text" class="problema-input" placeholder="Ingresa las palabras separadas por una coma: " id="p3-input" onkeydown="return validarLetras3(event)" onkeyup="mayusculas(this);"><br>
+                    <button type="button" class="problema-button" style="margin-top: 1rem;" onclick="problema3()" ><b>Calcular Palabras</b></button>
+                    <pre class="problema-output" id="p3-output" >Esperando datos...</pre>
+                </div>
+
+            </td></tr></table>
+
+        </div>
+    </div>
+</body>
+</html>
